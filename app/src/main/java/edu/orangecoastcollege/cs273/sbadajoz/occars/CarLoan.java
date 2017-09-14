@@ -7,6 +7,9 @@ public class CarLoan {
     private double mDownPayment;
     private int mTerm;
 
+    public CarLoan() {
+    }
+
     public CarLoan(double price, double downPayment, int term) {
         mPrice = price;
         mDownPayment = downPayment;

@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="edu.orangecoastcollege.cs273.sbadajoz.occars.LoadSummaryActivity">
+    tools:context="edu.orangecoastcollege.cs273.sbadajoz.occars.LoanSummaryActivity">
 
 </android.support.constraint.ConstraintLayout>
