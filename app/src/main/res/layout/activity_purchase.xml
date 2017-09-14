@@ -149,10 +149,12 @@
         android:id="@+id/loanReportButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
         android:layout_marginBottom="13dp"
         android:text="@string/loan_report_button_text"
-        android:textSize="14sp" />
+        android:textSize="14sp"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/textView5"
+        android:layout_toStartOf="@+id/textView5"
+        android:onClick="reportSummary"/>
 
 </RelativeLayout>
