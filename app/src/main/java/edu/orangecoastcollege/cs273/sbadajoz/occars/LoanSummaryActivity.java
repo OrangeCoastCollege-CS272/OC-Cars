@@ -25,4 +25,12 @@ public class LoanSummaryActivity extends AppCompatActivity {
         mFourYearsRadioButton = (RadioButton) findViewById(R.id.fourYearsRadioButton);
         mFiveYearsRadioButton = (RadioButton) findViewById(R.id.fiveYearsRadioButton);
     }
+
+    private void collectCarLoanData() {
+        mCarLoan.setPrice(Double.parseDouble(mCarPriceEditText.getText().toString()));
+        mCarLoan.setDownPayment(Double.parseDouble(mDownPaymentEditText.getText().toString()));
+        if(mThreeYearsRadioButton.isChecked()) mCarLoan.setTerm(3);
+        else if(mFourYearsRadioButton.isChecked()) mCarLoan.setTerm(4);
+        else mCarLoan.setTerm(5);
+    }
 }
