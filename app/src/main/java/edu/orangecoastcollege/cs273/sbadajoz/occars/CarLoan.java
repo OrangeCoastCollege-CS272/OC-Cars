@@ -52,9 +52,6 @@ public class CarLoan {
         return borrowedAmount() * interestAmount() / (mTerm * 12.0);
     }
 
-    public static double getStateTax() {
-        return STATE_TAX;
-    }
 
     public double getPrice() {
         return mPrice;

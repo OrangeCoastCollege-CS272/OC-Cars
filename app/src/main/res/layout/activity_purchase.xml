@@ -7,12 +7,11 @@
     tools:context="edu.orangecoastcollege.cs273.sbadajoz.occars.PurchaseActivity">
 
     <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        app:srcCompat="@drawable/oc_cars_logo" />
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/oc_cars_logo"
+            android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/textView"
@@ -99,11 +98,10 @@
         android:id="@+id/loanTermRadioGroup"
         android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="23dp"
+        android:layout_marginTop="26dp"
         android:background="@color/steel_blue"
         android:gravity="center_horizontal"
-        android:layout_below="@+id/textView3"
-        android:layout_alignRight="@+id/textView6"
+        android:layout_below="@+id/textView3" android:layout_alignRight="@+id/textView6"
         android:layout_alignEnd="@+id/textView6">
 
         <RadioButton
@@ -137,24 +135,21 @@
     </RadioGroup>
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/loanTermRadioGroup"
-        android:layout_centerHorizontal="true"
-        android:text="@string/loan_term"
-        android:textSize="12sp"
-        android:id="@+id/textView6" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loan_term"
+            android:textSize="12sp"
+            android:id="@+id/textView6"
+            android:layout_below="@+id/loanTermRadioGroup" android:layout_centerHorizontal="true"/>
 
     <Button
-        android:id="@+id/loanReportButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="13dp"
-        android:text="@string/loan_report_button_text"
-        android:textSize="14sp"
-        android:layout_alignParentBottom="true"
-        android:layout_toLeftOf="@+id/textView5"
-        android:layout_toStartOf="@+id/textView5"
-        android:onClick="reportSummary"/>
+            android:id="@+id/loanReportButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="@string/loan_report_button_text"
+            android:textSize="14sp"
+            android:onClick="reportSummary" android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
 
 </RelativeLayout>
