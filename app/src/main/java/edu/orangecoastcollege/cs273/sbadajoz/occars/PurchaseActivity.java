@@ -12,6 +12,10 @@ import android.widget.RadioButton;
 
 import java.text.DecimalFormat;
 
+/**
+ * Connects the user input to the view
+ * Allows user to input data about car purchase and details about loan
+ */
 public class PurchaseActivity extends Activity {
     private EditText mCarPriceEditText;
     private EditText mDownPaymentEditText;
@@ -24,6 +28,11 @@ public class PurchaseActivity extends Activity {
 
     private CarLoan mCarLoan = new CarLoan();
 
+    /**
+     * Called when activity is first loaded connects the various view objects to the actual view in the layout
+     *
+     * @param savedInstanceState any data from previous run if applicable
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,6 +54,11 @@ public class PurchaseActivity extends Activity {
         else mCarLoan.setTerm(5);
     }
 
+    /**
+     * On click of the button, collects the data from various fields on the view and send them in an intent to
+     * the next activity {@link LoanSummaryActivity}
+     * @param v the view which calls the method
+     */
     protected void reportSummary(View v) {
         collectCarLoanData();
 
